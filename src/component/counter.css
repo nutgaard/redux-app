@@ -1,0 +1,15 @@
+.counter {
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+
+.counter__stepsize {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.counter__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
