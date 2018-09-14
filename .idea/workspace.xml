@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2b37a70-27b4-496c-a84c-2d299493c4ea" name="Default" comment="" />
+    <list default="true" id="a2b37a70-27b4-496c-a84c-2d299493c4ea" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/boredom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/boredrom/boredom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/boredrom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/boredrom/boredrom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/counter/counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/counter/counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ducks/boredom.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ducks/boredom.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/utils.ts" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,20 +22,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/redux/index.ts">
+          <file leaf-file-name="counter.tsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/component/counter/counter.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="counter.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/redux/ducks/counter.ts">
+          <file leaf-file-name="utils.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/redux/utils.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+                <state relative-caret-position="330">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -34,38 +43,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="counter.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/counter.css">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="28" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="boredrom.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/component/boredrom.css">
+          <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/redux/index.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#0#79#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.css">
+          <file leaf-file-name="boredom.tsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/component/boredrom/boredom.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/application.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -73,35 +76,8 @@
           <file leaf-file-name="application.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/application.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="appstate.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/redux/appstate.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#0#47#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" selection-start-line="6" selection-end-line="6" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="105">
+                  <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
                 </state>
               </provider>
             </entry>
@@ -110,35 +86,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="boredom.tsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/component/boredom.tsx">
+          <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/node_modules/redux-thunk/index.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="46" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="105">
+                  <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="counter.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/counter.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="47" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="boredom.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="boredom.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/redux/ducks/boredom.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+                <state relative-caret-position="569">
+                  <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -164,6 +125,9 @@
       <find>Actions</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -175,21 +139,24 @@
         <option value="$PROJECT_DIR$/src/app.tsx" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/redux/ducks/shape.ts" />
-        <option value="$PROJECT_DIR$/src/redux/utils.ts" />
         <option value="$PROJECT_DIR$/src/component/boredom.tsx.ts" />
         <option value="$PROJECT_DIR$/src/redux/ducks/counter.ts" />
         <option value="$PROJECT_DIR$/src/redux/appstate.ts" />
         <option value="$PROJECT_DIR$/src/redux/index.ts" />
-        <option value="$PROJECT_DIR$/src/application.tsx" />
         <option value="$PROJECT_DIR$/src/feature/counter/counter.tsx" />
         <option value="$PROJECT_DIR$/src/redux/ducks/counter.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/application.css" />
         <option value="$PROJECT_DIR$/src/component/counter.tsx" />
-        <option value="$PROJECT_DIR$/src/redux/ducks/boredom.ts" />
         <option value="$PROJECT_DIR$/src/component/counter.css" />
         <option value="$PROJECT_DIR$/src/component/boredom.tsx" />
         <option value="$PROJECT_DIR$/src/component/boredrom.css" />
+        <option value="$PROJECT_DIR$/src/application.tsx" />
+        <option value="$PROJECT_DIR$/src/component/boredrom/boredom.tsx" />
+        <option value="$PROJECT_DIR$/src/component/counter/counter.tsx" />
+        <option value="$PROJECT_DIR$/src/redux/ducks/boredom.ts" />
+        <option value="$PROJECT_DIR$/src/redux/utils.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -207,11 +174,12 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1888" />
+    <option name="width" value="960" />
     <option name="height" value="1138" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
@@ -277,12 +245,6 @@
               <item name="redux-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="redux-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redux-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redux-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="redux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,6 +291,8 @@
       <recent name="$PROJECT_DIR$/src/feature/counter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/component/counter" />
+      <recent name="$PROJECT_DIR$/src/component/boredrom" />
       <recent name="$PROJECT_DIR$/src/component" />
       <recent name="$PROJECT_DIR$/src/redux" />
     </key>
@@ -402,15 +366,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536946424447</updated>
-      <workItem from="1536946425725" duration="9580000" />
+      <workItem from="1536946425725" duration="11413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9580000" />
+    <option name="totallyTimeSpent" value="11413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1888" height="1138" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1138" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
@@ -422,13 +386,13 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Thumbnails" order="0" visible="true" weight="0.32907662" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="5" visible="true" weight="0.32907662" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32907662" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="TypeScript" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.1608884" />
+      <window_info content_ui="combo" id="Project" order="4" weight="0.15814696" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
@@ -443,6 +407,37 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32907662" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="2" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="5" visible="true" weight="0.32907662" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.15814696" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -479,23 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/utils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react-redux/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -510,34 +488,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-thunk/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/appstate.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -551,13 +505,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application.tsx">
+    <entry file="file://$PROJECT_DIR$/src/component/boredrom/boredrom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/counter/counter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -585,47 +543,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/counter.tsx">
+    <entry file="file://$PROJECT_DIR$/src/redux/appstate.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/boredrom/boredom.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/counter/counter.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="17144" column="17" selection-start-line="17144" selection-start-column="17" selection-end-line="17144" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/redux-thunk/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/ducks/boredom.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="569">
+          <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/counter.css">
+    <entry file="file://$PROJECT_DIR$/src/redux/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/boredom.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/boredrom.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="330">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
         </state>
       </provider>
     </entry>

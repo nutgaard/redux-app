@@ -1,6 +1,6 @@
 import { Action } from 'redux';
 import { ThunkAction } from 'redux-thunk';
-import { assertNever } from '../utils';
+import { assertNever, fetchJsonThunk } from '../utils';
 import { AppState } from '../appstate';
 
 enum TypeKeys {
@@ -75,26 +75,12 @@ interface BoredomData {
     activity: string;
 }
 
-export function findNew(): ThunkAction<Promise<BoredomData>, AppState, {}, Actions> {
-    return (dispatch) => {
-        dispatch({ type: TypeKeys.FIND_NEW_REQUEST });
-
-        return fetch(`https://www.boredapi.com/api/activity`)
-            .then((resp) => {
-                if (!resp.ok) {
-                    throw new Error(`Status: ${resp.status}`);
-                }
-                return resp.json();
-            })
-            .then((json) => {
-                dispatch({ type: TypeKeys.FIND_NEW_OK, activity: json.activity });
-                return json;
-            }).catch((error: Error) => {
-                dispatch({ type: TypeKeys.FIND_NEW_ERROR, error });
-                return error;
-            })
-    }
-
+export function findNew(): ThunkAction<Promise<BoredomData | Error>, AppState, {}, Actions> {
+    return fetchJsonThunk<BoredomData, Actions>('https://www.boredapi.com/api/activity', {
+        requesting: () => ({ type: TypeKeys.FIND_NEW_REQUEST }),
+        ok: (json) => ({ type: TypeKeys.FIND_NEW_OK, activity: json.activity }),
+        error: (error) => ({ type: TypeKeys.FIND_NEW_ERROR, error })
+    });
 }
 
 export function selectBoredomStatus(state: AppState): string {

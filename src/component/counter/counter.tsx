@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import { AppState } from '../redux/appstate';
-import { decrement, increment, setStepsize, selectCounterStepsize, selectCounterValue } from '../redux/ducks/counter';
+import { AppState } from '../../redux/appstate';
+import { decrement, increment, setStepsize, selectCounterStepsize, selectCounterValue } from '../../redux/ducks/counter';
 import './counter.css';
 
 interface StateProps {

@@ -4,8 +4,8 @@ import store from './redux';
 import './application.css';
 
 import logo from './logo.svg';
-import Counter from './component/counter';
-import Boredom from './component/boredom';
+import Counter from './component/counter/counter';
+import Boredom from './component/boredrom/boredom';
 
 class Application extends React.Component {
     public render() {

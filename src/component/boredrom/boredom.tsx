@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import { findNew, selectBoredomStatus } from '../redux/ducks/boredom';
-import { AppState } from '../redux/appstate';
+import { findNew, selectBoredomStatus } from '../../redux/ducks/boredom';
+import { AppState } from '../../redux/appstate';
 import './boredrom.css';
 
 interface StateProps {
