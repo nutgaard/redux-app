@@ -2,6 +2,7 @@ import { Action } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 import { assertNever, fetchJsonThunk } from '../utils';
 import { AppState } from '../appstate';
+import { createSelector } from 'reselect';
 
 enum TypeKeys {
     FIND_NEW_REQUEST = 'BOREDOM/FIND_NEW_REQUEST',
@@ -83,17 +84,19 @@ export function findNew(): ThunkAction<Promise<BoredomData | Error>, AppState, {
     });
 }
 
-export function selectBoredomStatus(state: AppState): string | undefined {
-    const boredom = state.boredom;
-    switch (boredom.type) {
+function boredomStatusSelector(state: BoredomState): string | undefined {
+    switch (state.type) {
         case TypeKeys.FIND_NEW_REQUEST:
             return `Requesting`;
         case TypeKeys.FIND_NEW_OK:
-            return boredom.activity;
+            return state.activity;
         case TypeKeys.FIND_NEW_ERROR:
-            return boredom.error.message;
+            return state.error.message;
         default:
-            assertNever(boredom);
+            assertNever(state);
             return "Unknown...";
     }
 }
+
+const sliceSelector = (state: AppState) => state.boredom;
+export const selectBoredomStatus = createSelector(sliceSelector, boredomStatusSelector);

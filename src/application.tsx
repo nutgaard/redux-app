@@ -8,6 +8,7 @@ import './application.css';
 import logo from './logo.svg';
 import Counter from './component/counter/counter';
 import Boredom from './component/boredom/boredom';
+import Summary from './component/summary/summary';
 import messageBundle from './bundle'
 import Intl from './intl';
 
@@ -30,6 +31,7 @@ class Application extends React.Component {
                         </p>
                         <Counter extra="My Props" />
                         <Boredom />
+                        <Summary />
                     </div>
                 </IntlProvider>
             </Provider>

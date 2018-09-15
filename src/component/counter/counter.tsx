@@ -9,6 +9,7 @@ import {
     increment,
     selectCounterStepsize,
     selectCounterValue,
+    selectFibonacci,
     setStepsize
 } from '../../redux/ducks/counter';
 import './counter.css';
@@ -16,6 +17,7 @@ import './counter.css';
 interface StateProps {
     value: number;
     stepsize: number;
+    fibonacci: number;
 }
 
 interface DispatchProps {
@@ -52,6 +54,7 @@ function Counter(props: Props) {
                 <FormattedMessage id={Intl.counterStepOrdinal} values={{ steps: props.value }}>
                     {(text: string) => (<p>Ordinal: {text}</p>)}
                 </FormattedMessage>
+                <p>{props.fibonacci}</p>
             </div>
             <p>{props.extra}</p>
         </div>
@@ -60,7 +63,8 @@ function Counter(props: Props) {
 
 const mapStateToProps = (state: AppState): StateProps => ({
     value: selectCounterValue(state),
-    stepsize: selectCounterStepsize(state)
+    stepsize: selectCounterStepsize(state),
+    fibonacci: selectFibonacci(state)
 });
 const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
     ...bindActionCreators({

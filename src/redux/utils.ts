@@ -36,3 +36,10 @@ export function fetchJsonThunk<DATA, ACTIONS extends Action>(url: string, action
             });
     }
 }
+
+export function log(fn: any) {
+    return (a: any) => {
+        console.log('fib', a); // tslint:disable-line
+        return fn(a);
+    }
+}

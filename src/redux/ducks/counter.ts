@@ -1,5 +1,6 @@
 import { Action } from 'redux';
-import { assertNever } from '../utils';
+import { createSelector } from 'reselect';
+import { assertNever, log } from '../utils';
 import { AppState } from '../appstate';
 
 enum TypeKeys {
@@ -76,10 +77,16 @@ export function setStepsize(value: string): SetStepsize {
     }
 }
 
-export function selectCounterValue(state: AppState): number {
-    return state.counter.value;
+const sliceSelector = (state: AppState) => state.counter;
+const valueSelector = (state: CounterState) => state.value;
+const stepsizeSelector = (state: CounterState) => state.stepsize;
+function calculateFibonacci(n: number): number {
+    if (n < 2) {
+        return 1;
+    }
+    return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
 }
 
-export function selectCounterStepsize(state: AppState): number {
-    return state.counter.stepsize;
-}
+export const selectCounterValue = createSelector(sliceSelector, valueSelector);
+export const selectCounterStepsize = createSelector(sliceSelector, stepsizeSelector);
+export const selectFibonacci = createSelector(selectCounterValue, log(calculateFibonacci));
