@@ -1,5 +1,7 @@
 # Redux-app
 
+Example-setup using react, redux and other common libraries from the react-ecosystem.
+
 ### npm/yarn scripts
 
 This project is created using `yarn`, but could easily be converted to use `npm`.
@@ -23,6 +25,7 @@ yarn test       // Run tests
 | [redux-thunk](https://github.com/reduxjs/redux-thunk) | Allowing async-actions in redux | 
 | [reselect](https://github.com/reduxjs/reselect) | Creating memoized-selectors | 
 | [react-intl](https://github.com/yahoo/react-intl) | React-components for I18n | 
+| [react-router](https://github.com/ReactTraining/react-router) | Routing in the browser | 
 
 
 #### Utility libraries

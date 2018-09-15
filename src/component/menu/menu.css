@@ -1,0 +1,39 @@
+.menu {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #222222; /* Old browsers */
+    background: linear-gradient(to bottom, #222222 0%,#222222 87%,#ffffff 100%);
+}
+
+.menu__link {
+    position: relative;
+    color: #efefef;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu__link:before, .menu__link:after {
+    content: "";
+    position: absolute;
+    bottom: 30%;
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    transition: width 100ms ease-in-out;
+}
+.menu__link:before {
+    right: 50%;
+}
+.menu__link:after {
+    left: 50%;
+}
+
+.menu__link:hover:before, .menu__link:hover:after {
+    width: 50%;
+}
+
+.menu__link--active {
+    color: #d1d1d1;
+}
