@@ -1,0 +1,6 @@
+{steps, selectordinal,
+    one {#st}
+    two {#nd}
+    few {#rd}
+    other {#th}
+}

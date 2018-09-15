@@ -1,0 +1,5 @@
+{steps, plural,
+    =0 {no steps}
+    one {1 step}
+    other {{steps} steps}
+}

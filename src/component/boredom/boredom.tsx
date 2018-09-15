@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
 import { findNew, selectBoredomStatus } from '../../redux/ducks/boredom';
 import { AppState } from '../../redux/appstate';
+import Intl from './intl';
 import './boredrom.css';
 
 interface StateProps {
-    boredomResponse: string;
+    boredomResponse?: string;
 }
 interface DispatchProps {
     findNew: typeof findNew
@@ -14,10 +16,17 @@ interface DispatchProps {
 type Props = StateProps & DispatchProps;
 
 function Boredom(props: Props) {
+    let text: string | JSX.Element = props.boredomResponse!;
+    if (!text) {
+        text = <FormattedMessage id={Intl.boredomInitialText}/>;
+    }
+
     return (
         <div className="boredom">
-            <button className="boredom__button" onClick={props.findNew}>Find activity</button>
-            <p>{props.boredomResponse}</p>
+            <button className="boredom__button" onClick={props.findNew}>
+                <FormattedMessage id={Intl.boredomFindNext}/>
+            </button>
+            <p>{text}</p>
         </div>
     );
 }

@@ -24,7 +24,7 @@ type Actions = FindNewRequest | FindNewError | FindNewOk;
 
 interface OkState {
     type: TypeKeys.FIND_NEW_OK;
-    activity: string;
+    activity?: string;
 }
 
 interface ErrorState {
@@ -41,7 +41,7 @@ export type BoredomState = OkState | ErrorState | RequestingState;
 
 const initialState: BoredomState = {
     type: TypeKeys.FIND_NEW_OK,
-    activity: 'Click the button to procastinate'
+    activity: undefined
 };
 
 export default function reducer(state: BoredomState = initialState, action: Actions): BoredomState {
@@ -83,7 +83,7 @@ export function findNew(): ThunkAction<Promise<BoredomData | Error>, AppState, {
     });
 }
 
-export function selectBoredomStatus(state: AppState): string {
+export function selectBoredomStatus(state: AppState): string | undefined {
     const boredom = state.boredom;
     switch (boredom.type) {
         case TypeKeys.FIND_NEW_REQUEST:
