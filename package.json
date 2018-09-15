@@ -10,16 +10,17 @@
     "react-scripts-ts": "2.17.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "reselect": "^3.0.1",
-    "typesafe-actions": "^2.0.4"
+    "reselect": "^3.0.1"
   },
   "scripts": {
-    "start": "npm-run-all build:text -s start:*",
-    "start:script": "react-scripts-ts start",
-    "start:text": "chokidar \"i18n/**/*\" -c \"yarn text:build\"",
-    "build": "run-s build:text build:script",
-    "build:script": "react-scripts-ts build",
-    "build:text": "react-intl-bundler i18n src --typescript",
+    "start": "cross-env REACT_APP_MOCK=false npm-run-all builder:text -p watch:*",
+    "start:mock": "cross-env REACT_APP_MOCK=true npm-run-all builder:text -p watch:*",
+    "watch:script": "react-scripts-ts start",
+    "watch:text": "chokidar \"i18n/**/*\" -c \"yarn builder:text\"",
+    "build": "cross-env REACT_APP_MOCK=false run-s builder:text builder:script",
+    "build:mock": "cross-env REACT_APP_MOCK=true run-s builder:text builder:script",
+    "builder:script": "react-scripts-ts build",
+    "builder:text": "react-intl-bundler i18n src --typescript",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
@@ -35,7 +36,9 @@
     "@types/redux-thunk": "^2.1.0",
     "@types/reselect": "^2.2.0",
     "chokidar-cli": "^1.2.1",
+    "cross-env": "^5.2.0",
     "npm-run-all": "^4.1.3",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "yet-another-fetch-mock": "^2.3.3"
   }
 }
