@@ -36,7 +36,7 @@ export default function reducer(state: CounterState = initialState, action: Acti
         case TypeKeys.COUNTER_INCREMENT: {
             return {
                 ...state,
-                value: state.value + state.stepsize
+                value: Math.min(state.value + state.stepsize, 40)
             };
         }
         case TypeKeys.COUNTER_DECREMENT: {
