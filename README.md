@@ -26,6 +26,7 @@ yarn test       // Run tests
 | [reselect](https://github.com/reduxjs/reselect) | Creating memoized-selectors | 
 | [react-intl](https://github.com/yahoo/react-intl) | React-components for I18n | 
 | [react-router](https://github.com/ReactTraining/react-router) | Routing in the browser | 
+| [react-loadable](https://github.com/jamiebuilds/react-loadable) | Codesplitting. Not necessary for small apps | 
 
 
 #### Utility libraries
