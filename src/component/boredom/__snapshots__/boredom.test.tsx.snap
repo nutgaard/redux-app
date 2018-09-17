@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`boredom component boredom snapshot 1`] = `
+<IntlProvider
+  locale="en"
+  messages={
+    Object {
+      "boredom.find-next": "Find activity",
+      "boredom.initial-text": "Click the button to procastinate",
+      "counter.decrement": "-",
+      "counter.increment": "+",
+      "counter.step-ordinal": "{steps, selectordinal,
+    one {#st}
+    two {#nd}
+    few {#rd}
+    other {#th}
+}",
+      "counter.step-plural": "{steps, plural,
+    =0 {no steps}
+    one {1 step}
+    other {{steps} steps}
+}",
+      "counter.stepsize": "Stepsize:",
+      "hero.header": "Welcome to React",
+      "hero.intro": "To get started, edit <code>src/app.tsx</code> and save to reload.",
+      "summary.boredom-text": "Current activity:",
+      "summary.counter-stepsize": "Stepsize:",
+      "summary.counter-value": "Counter value:",
+      "summary.fibonacci-text": "Fibonacci:",
+    }
+  }
+>
+  <Boredom
+    findNew={[MockFunction]}
+  >
+    <div
+      className="boredom"
+    >
+      <button
+        className="boredom__button"
+        onClick={[MockFunction]}
+      >
+        <FormattedMessage
+          id="boredom.find-next"
+          values={Object {}}
+        >
+          <span>
+            Find activity
+          </span>
+        </FormattedMessage>
+      </button>
+      <p>
+        <FormattedMessage
+          id="boredom.initial-text"
+          values={Object {}}
+        >
+          <span>
+            Click the button to procastinate
+          </span>
+        </FormattedMessage>
+      </p>
+    </div>
+  </Boredom>
+</IntlProvider>
+`;

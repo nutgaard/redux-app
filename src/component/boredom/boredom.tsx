@@ -15,7 +15,7 @@ interface DispatchProps {
 }
 type Props = StateProps & DispatchProps;
 
-function Boredom(props: Props) {
+export function Boredom(props: Props) {
     let text: string | JSX.Element = props.boredomResponse!;
     if (!text) {
         text = <FormattedMessage id={Intl.boredomInitialText}/>;
