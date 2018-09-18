@@ -10,7 +10,7 @@ function mountWithIntl(node: ReactNode) {
         <IntlProvider locale="en" messages={messages.en}>
             {node}
         </IntlProvider>
-    ).get(0);
+    );
 }
 
 describe('boredom component', () => {
