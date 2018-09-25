@@ -1,6 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Application from './application';
+import 'nav-frontend-core/less/core.less';
+import 'nav-frontend-typografi-style';
 import './index.css';
 
 // tslint:disable no-var-requires
